@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.container {
+  display: grid;
+  grid-template-columns: [sidenav-start] 10rem [sidenav-end full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 100vh repeat(6, auto); }
+
+.sidebar {
+  border: 2px solid red;
+  background-color: green;
+  grid-row: 1 / -1; }
+
+.header {
+  background-color: red;
+  grid-column: full-start / -1; }
+
+.about {
+  border: 2px solid black;
+  background-color: green;
+  grid-column: center-start / center-end; }
+
+.skills {
+  background-color: pink;
+  grid-column: center-start / center-end; }
+
+.education {
+  background-color: gold;
+  grid-column: center-start / 7; }
+
+.experience {
+  background-color: gray;
+  grid-column: 7 / center-end; }
+
+.projects {
+  border: 2px solid brown;
+  grid-column: center-start / center-end; }
+
+.contact {
+  border: 2px solid green;
+  grid-column: full-start / full-end; }
