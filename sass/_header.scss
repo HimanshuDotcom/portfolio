@@ -1,4 +1,36 @@
 .header {
-    background-color:red;
     grid-column: full-start / -1;
+    padding: 12rem;
+    background-color: lightgrey;
+    display: grid;
+    // grid-template-columns: min-content;
+    grid-template-rows: repeat(3,min-content);
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    overflow-y: scroll;
+
+    &__img {
+        height: 25rem;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    &__text {
+        font-size: 1.8rem;
+    }
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 2rem;
+    // justify-items: center;
+    &__link {
+        display: inline-block;
+    }
+    &__icon {
+        font-size: 1rem;
+        height: 2.25rem;
+        width: 2.25rem;
+    }
 }
