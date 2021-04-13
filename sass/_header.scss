@@ -1,18 +1,19 @@
 .header {
     grid-column: full-start / -1;
     padding: 12rem;
-    background-color: lightgrey;
+    // background-color: lightgrey;
     display: grid;
     // grid-template-columns: min-content;
     grid-template-rows: repeat(3,min-content);
     row-gap: 2rem;
     justify-items: center;
     align-items: center;
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
     &__img {
         height: 25rem;
         display: inline-block;
+        border: 12px solid lightgray;
         border-radius: 50%;
     }
     &__text {
