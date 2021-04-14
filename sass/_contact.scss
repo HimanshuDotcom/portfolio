@@ -1,4 +1,61 @@
 .contact {
-    border: 2px solid green;
+    // border: 2px solid green;
     grid-column: full-start / full-end;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 1fr 1f;
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    height: 90vh;
+
+    &__heading {
+        grid-column: 1 / -1;
+        // border: 1px solid red;
+        justify-self: start;
+        margin-bottom: 0;
+    }
+
+    &__box {
+        display: grid;
+        justify-items: center;
+
+        p {
+            font-size: 1.4rem;
+            color: rgba(0,0,0,.6)
+        }
+    }
+
+    &__icon {
+        width: 4rem;
+        height: 5rem;
+        fill: red;
+        cursor: pointer;
+    }
+
+    &__mail {
+        grid-column: 1 / 2;
+    }
+
+    &__address {
+        grid-column: 2 / 3;
+    }
+
+    &__text {
+        font-size: 6rem;
+        color: red;
+        font-weight: 100;
+    }
+
+    &__text {
+        grid-column: 1 / -1;
+    }
+
+    &__btn {
+        // justify-self: center;
+        grid-column: 1 / -1;
+        border: 1px solid red;
+        justify-self: center;
+    }
 }
