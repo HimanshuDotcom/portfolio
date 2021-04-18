@@ -1,6 +1,6 @@
 .contact {
     // border: 2px solid green;
-    grid-column: full-start / full-end;
+    grid-column: center-start / center-end;
     padding: 5rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -12,7 +12,6 @@
 
     &__heading {
         grid-column: 1 / -1;
-        // border: 1px solid red;
         justify-self: start;
         margin-bottom: 0;
     }
@@ -30,7 +29,7 @@
     &__icon {
         width: 4rem;
         height: 5rem;
-        fill: red;
+        fill: #FE2C54;
         cursor: pointer;
     }
 
@@ -44,7 +43,7 @@
 
     &__text {
         font-size: 6rem;
-        color: red;
+        color: #FE2C54;
         font-weight: 100;
     }
 
@@ -55,7 +54,7 @@
     &__btn {
         // justify-self: center;
         grid-column: 1 / -1;
-        border: 1px solid red;
+        border: 1px solid #FE2C54;
         justify-self: center;
     }
 }

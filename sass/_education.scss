@@ -18,7 +18,7 @@
         display: flex;
         align-items: flex-end;
         img {
-            // border: 1px solid red;
+            // border: 1px solid #FE2C54;
             margin-right: 2px;
         }
     }
@@ -38,14 +38,14 @@
         left: -23px;
         top: 8px;
         height: calc(100% + 3.5rem);
-        background-color: red;
+        background-color: #FE2C54;
     }
 }
 
 .circle-dot {
     width: 15px;
     height: 15px;
-    background-color: red;
+    background-color: #FE2C54;
     position: absolute;
     top: 5px;
     left: -30px;

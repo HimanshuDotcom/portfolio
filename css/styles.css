@@ -14,6 +14,9 @@ html {
   font-family: sans-serif;
   scroll-behavior: smooth; }
 
+body {
+  background-color: #f2f2fc; }
+
 .container {
   display: grid;
   grid-template-columns: [sidenav-start] 27rem [sidenav-end full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
@@ -39,31 +42,31 @@ html {
   left: 0;
   top: 0s;
   height: 100vh;
-  width: 27rem; }
+  width: 27rem;
+  background-color: #fdf9ff; }
 
 .name {
   text-align: center;
   position: relative;
   text-decoration: none;
   color: black;
-  padding: 5px;
-  background: #fff; }
+  padding: 5px; }
   .name::after, .name::before {
     content: '';
     display: block;
     position: absolute;
-    border: 4px solid red;
+    border: 4px solid white;
     transition: all .5s;
     width: 20px;
     height: 20px; }
   .name::after {
     top: 0px;
     right: 0px;
-    border-color: lightgreen red transparent transparent; }
+    border-color: #FE2C54 #FE2C54 transparent transparent; }
   .name::before {
     bottom: 0px;
     left: -5px;
-    border-color: transparent transparent lightgreen red; }
+    border-color: transparent transparent #FE2C54 #FE2C54; }
   .name:hover::after, .name:hover::before {
     width: 110%;
     height: 110%; }
@@ -73,13 +76,15 @@ html {
   font-size: 1.6rem;
   color: black;
   display: block;
-  border-bottom: 1px solid lightgray;
   padding: 10px 0;
   letter-spacing: 1px;
   line-height: 1.5; }
 
 .copyright {
   font-size: 1.5rem; }
+
+.active {
+  color: #FE2C54; }
 
 .header {
   grid-column: full-start / -1;
@@ -88,11 +93,12 @@ html {
   grid-template-rows: repeat(3, min-content);
   row-gap: 2rem;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #f2f2fc; }
   .header__img {
     height: 25rem;
     display: inline-block;
-    border: 12px solid lightgray;
+    border: 12px solid white;
     border-radius: 50%; }
   .header__text {
     font-size: 1.8rem; }
@@ -102,11 +108,15 @@ html {
   grid-template-columns: repeat(3, auto);
   column-gap: 2rem; }
   .social-media__link {
-    display: inline-block; }
+    display: inline-block;
+    background-color: #FE2C54;
+    border-radius: 50%; }
   .social-media__icon {
-    font-size: 1rem;
-    height: 2.25rem;
-    width: 2.25rem; }
+    height: 5rem;
+    width: 5rem;
+    fill: white;
+    display: inline-block;
+    padding: 1rem; }
 
 .about {
   grid-column: center-start / center-end;
@@ -121,7 +131,7 @@ html {
       content: ' ';
       position: absolute;
       height: 3px;
-      background-color: red; }
+      background-color: #FE2C54; }
     .about__heading::before {
       bottom: -12px;
       left: 0;
@@ -131,7 +141,7 @@ html {
       left: 0;
       width: 50px; }
   .about__greeting {
-    color: red; }
+    color: #FE2C54; }
   .about__info {
     font-size: 1.6rem;
     line-height: 22px; }
@@ -160,7 +170,8 @@ html {
   padding: 2rem 3rem;
   border-radius: 30px;
   color: white;
-  background-color: red; }
+  font-weight: bold;
+  background-color: #FE2C54; }
 
 .skills {
   display: grid;
@@ -181,7 +192,7 @@ html {
 .skill__line {
   width: 100%;
   height: 3px;
-  background-color: red;
+  background-color: #FE2C54;
   display: inline-block; }
   .skill__line--2 {
     height: 1.5px; }
@@ -216,12 +227,12 @@ html {
     left: -23px;
     top: 8px;
     height: calc(100% + 3.5rem);
-    background-color: red; }
+    background-color: #FE2C54; }
 
 .circle-dot {
   width: 15px;
   height: 15px;
-  background-color: red;
+  background-color: #FE2C54;
   position: absolute;
   top: 5px;
   left: -30px;
@@ -235,11 +246,25 @@ html {
   row-gap: 3.5rem; }
 
 .projects {
-  border: 2px solid brown;
+  padding: 5rem 2rem;
   grid-column: center-start / center-end; }
 
+.project-card {
+  display: grid;
+  grid-template-columns: 30%; }
+  .project-card__content {
+    padding: 2rem 4rem;
+    display: grid;
+    row-gap: 2rem;
+    background-color: white;
+    border-radius: 5px; }
+  .project-card__img {
+    width: 100%; }
+  .project-card__text {
+    font-size: 1.5rem; }
+
 .contact {
-  grid-column: full-start / full-end;
+  grid-column: center-start / center-end;
   padding: 5rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -261,7 +286,7 @@ html {
   .contact__icon {
     width: 4rem;
     height: 5rem;
-    fill: red;
+    fill: #FE2C54;
     cursor: pointer; }
   .contact__mail {
     grid-column: 1 / 2; }
@@ -269,11 +294,11 @@ html {
     grid-column: 2 / 3; }
   .contact__text {
     font-size: 6rem;
-    color: red;
+    color: #FE2C54;
     font-weight: 100; }
   .contact__text {
     grid-column: 1 / -1; }
   .contact__btn {
     grid-column: 1 / -1;
-    border: 1px solid red;
+    border: 1px solid #FE2C54;
     justify-self: center; }

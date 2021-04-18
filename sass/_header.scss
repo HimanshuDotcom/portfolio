@@ -8,12 +8,13 @@
     row-gap: 2rem;
     justify-items: center;
     align-items: center;
+    background-color: #f2f2fc;
     // overflow-y: hidden;
 
     &__img {
         height: 25rem;
         display: inline-block;
-        border: 12px solid lightgray;
+        border: 12px solid white;
         border-radius: 50%;
     }
     &__text {
@@ -28,10 +29,15 @@
     // justify-items: center;
     &__link {
         display: inline-block;
+        background-color: #FE2C54;
+        border-radius: 50%;
+
     }
     &__icon {
-        font-size: 1rem;
-        height: 2.25rem;
-        width: 2.25rem;
+        height: 5rem;
+        width: 5rem;
+        fill: white;
+        display: inline-block;
+        padding: 1rem;
     }
 }

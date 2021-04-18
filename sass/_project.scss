@@ -1,4 +1,27 @@
 .projects {
-    border: 2px solid brown;
+    // border: 2px solid brown;
+    padding: 5rem 2rem;
     grid-column: center-start / center-end;
+    // background-color: lightgray;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 30%;
+    &__content {
+        // border: 1px solid #FE2C54;
+        padding: 2rem 4rem;
+        display: grid;
+        row-gap: 2rem;
+        background-color: white;
+        border-radius: 5px;
+    }
+    &__img {
+        // height: 25rem;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
 }

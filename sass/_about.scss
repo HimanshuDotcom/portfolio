@@ -13,7 +13,7 @@
             content: ' ';
             position: absolute;
             height: 3px;
-            background-color: red;
+            background-color: #FE2C54;
 
         }
         &::before {
@@ -29,7 +29,7 @@
     }
 
     &__greeting {
-        color: red;
+        color: #FE2C54;
     }
 
     &__info {
@@ -59,7 +59,7 @@
 
     &__text {
         font-size: 1.6rem;
-        // border: 1px solid red;
+        // border: 1px solid #FE2C54;
     }
 }
 
@@ -70,5 +70,6 @@
     padding: 2rem 3rem;
     border-radius: 30px;
     color: white;
-    background-color: red;
+    font-weight: bold;
+    background-color: #FE2C54;
 }
