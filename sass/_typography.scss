@@ -9,3 +9,30 @@
 .heading-tertiary {
     font-size: 2.2rem;
 }
+
+.heading-primary--design {
+    position: relative;
+    font-size: 3.5rem;
+
+    &::before,&::after {
+        content: ' ';
+        position: absolute;
+        height: 3px;
+        background-color: #FE2C54;
+
+    }
+    &::before {
+        bottom: -12px;
+        left: 0;
+        width: 30px;
+    }
+    &::after {
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+    }
+}
+
+.mb-sm {margin-bottom: 2rem;}
+.mb-md {margin-bottom: 3rem;}
+.mb-lg {margin-bottom: 4rem;}

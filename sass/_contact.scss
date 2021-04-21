@@ -8,12 +8,11 @@
     row-gap: 2rem;
     justify-items: center;
     align-items: center;
-    height: 90vh;
+    height: 90vh; //   note this
 
     &__heading {
         grid-column: 1 / -1;
         justify-self: start;
-        margin-bottom: 0;
     }
 
     &__box {

@@ -2,32 +2,7 @@
     grid-column: center-start / center-end;
     padding: 5rem 0;
     display: grid;
-    grid-template-rows: auto 3rem 4rem 2fr 1fr;
-    row-gap: 1rem;
-
-    &__heading {
-        position: relative;
-        margin-bottom: 5rem;
-
-        &::before,&::after {
-            content: ' ';
-            position: absolute;
-            height: 3px;
-            background-color: #FE2C54;
-
-        }
-        &::before {
-            bottom: -12px;
-            left: 0;
-            width: 30px;
-        }
-        &::after {
-            bottom: -5px;
-            left: 0;
-            width: 50px;
-        }
-    }
-
+    grid-template-rows: auto  auto minmax(min-content, 8rem) auto;
     &__greeting {
         color: #FE2C54;
     }
@@ -43,7 +18,7 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,min-content);
     row-gap: 1.5rem;
-    align-self: center;
+    column-gap: 2rem;
 
     &__item {
         display: grid;
