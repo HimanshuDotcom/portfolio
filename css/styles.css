@@ -332,23 +332,27 @@ body {
     grid-template-rows: auto; }
 
 .projects {
-  padding: 5rem 2rem;
+  padding: 10rem 0;
   grid-column: center-start / center-end; }
 
-.project-card {
+.project-container {
   display: grid;
-  grid-template-columns: 30%; }
-  .project-card__content {
-    padding: 2rem 4rem;
-    display: grid;
-    row-gap: 2rem;
-    background-color: white;
-    border-radius: 5px; }
-  .project-card__img {
-    height: 20rem;
-    width: 100%; }
-  .project-card__text {
-    font-size: 1.5rem; }
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 5rem; }
+
+.project-card__content {
+  padding: 2rem;
+  display: grid;
+  row-gap: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  line-height: 25px; }
+
+.project-card__img {
+  width: 100%; }
+
+.project-card__text {
+  font-size: 1.5rem; }
 
 .contact {
   grid-column: center-start / center-end;
