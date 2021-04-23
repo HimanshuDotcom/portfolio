@@ -1,14 +1,14 @@
 .contact {
     // border: 2px solid green;
     grid-column: center-start / center-end;
-    padding: 5rem 0;
+    // padding: 5rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto 1fr 1f;
+    grid-template-rows: auto auto 1fr 1fr;
     row-gap: 2rem;
     justify-items: center;
     align-items: center;
-    height: 90vh; //   note this
+    height: 90vh;
 
     &__heading {
         grid-column: 1 / -1;

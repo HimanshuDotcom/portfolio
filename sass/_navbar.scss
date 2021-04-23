@@ -6,10 +6,19 @@
     padding: 5rem 3rem;
     position: fixed;
     left: 0;
-    top: 0s;
-    height: 100vh;
+    top: 0;
+    height: 100%;
     width: 27rem;
     background-color: #fdf9ff;
+
+    // @media only screen and(max-width: 800px) {
+    //     display: none;
+    //     visibility: hidden;
+    //     opacity: 0;
+    // }
+    // @media only screen and (max-width: 800px) {
+    //     display: none;
+    // }
 }
 
 .name {
@@ -76,3 +85,9 @@
 .active {
     color: #FE2C54;
 }
+
+// .toggler {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+// }

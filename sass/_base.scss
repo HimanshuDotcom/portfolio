@@ -15,6 +15,9 @@ html {
     font-size: 62.5%;  // 1rem = 10px
     font-family: sans-serif;
     scroll-behavior: smooth;
+    @media only  screen and (max-width: 800px) {
+        font-size: 8px;
+    }
 }
 
 body {
@@ -24,6 +27,10 @@ body {
 .container {
     display: grid;
     grid-template-columns: [sidenav-start ] 27rem [sidenav-end full-start] minmax(5rem, 1fr) [center-start] repeat(8,[col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
-    grid-template-rows: calc(100vh)  repeat(6,auto);
-    row-gap: 4rem;
+    // grid-template-rows: 100vh;
+    // row-gap: 4rem;
+
+    @media only screen and (max-width: 800px) {
+        grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8,[col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
+    }
 }
