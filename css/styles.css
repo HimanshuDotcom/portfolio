@@ -127,7 +127,12 @@ body {
   top: 0;
   height: 100%;
   width: 27rem;
-  background-color: #fdf9ff; }
+  background-color: #fdf9ff;
+  z-index: 50;
+  transition: all .8s; }
+  @media only screen and (max-width: 800px) {
+    .sidebar {
+      left: -25rem; } }
 
 .name {
   text-align: center;
@@ -163,6 +168,23 @@ body {
   padding: 10px 0;
   letter-spacing: 1px;
   line-height: 1.5; }
+
+.nav-button {
+  font-size: 4rem;
+  display: inline-block;
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  top: 5px;
+  right: -30px;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  visibility: hidden; }
+  @media only screen and (max-width: 800px) {
+    .nav-button {
+      visibility: visible; } }
 
 .copyright {
   font-size: 1.5rem; }
@@ -250,9 +272,11 @@ body {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(auto-fit, 30rem);
+  justify-content: space-between;
   grid-column: center-start / center-end;
-  column-gap: 4rem; }
+  column-gap: 2rem;
+  row-gap: 4rem; }
 
 .skill__box {
   display: grid;
