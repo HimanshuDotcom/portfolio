@@ -1,8 +1,13 @@
 
 let navLinks = $('.nav__link');
 
+// window.addEventListener('resize',()=> {
+//     if(window.innerWidth > 1020)
+//         $('.sidebar').css("left", "0px");
+// })
+
 function hideSidebar() {
-    $('.sidebar').css("left", "-200px");
+    $('.sidebar').css("left", "-250px");
     $('.nav-button').html("&rarr;");
 }
 
@@ -11,6 +16,7 @@ function showSidebar() {
     $('.nav-button').html("&larr;");
 }
 
+// active link 
 navLinks.each(function(index,value){
     console.log(value)
     $(value).click(function() {
@@ -23,12 +29,10 @@ navLinks.each(function(index,value){
 })
 
 
-// nav-button
+// click on nav-buton
 
 $('.nav-button').click(function() {
-    let element = $(this);
-    let sidebar = $('.sidebar')
-    console.log(sidebar.css("left"))
+    let sidebar = $('.sidebar');
     if(sidebar.css("left") == "0px") 
         hideSidebar();
     else 

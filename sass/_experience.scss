@@ -5,6 +5,11 @@
     grid-template-rows: repeat(2,min-content);
     row-gap: 3.5rem;
 
+    @media only screen and (max-width: 800px) {
+        grid-column: center-start / center-end;
+        padding: 0;
+    }
+
     .timeline-box {
         grid-template-rows: auto;
     }

@@ -7,6 +7,10 @@
     row-gap: 3.5rem;
     border-right: 1px solid #eee;
     overflow: hidden;
+
+    @media only screen and (max-width: 800px) {
+        grid-column: center-start / center-end;
+    }
 }
 
 .timeline-box {

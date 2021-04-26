@@ -8,13 +8,17 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 27rem;
+    width: 270px;
     background-color: #fdf9ff;
     z-index: 50;
     transition: all .8s;
 
-    @media only screen and (max-width: 800px) {
-        left: -25rem;
+    @media only screen and (min-width: 1020px) {
+        left: 0px !important;
+    }
+
+    @media only screen and (max-width: 1020px) {
+        left: -250px;
     }
 }
 
@@ -68,19 +72,21 @@
 }
 
 .nav-button {
-    font-size: 4rem;
-    display: inline-block;
+    font-size: 40px;
+    display: flex;
+    align-content: center;
+    align-items: center;
     position: absolute;
     color: white;
     font-weight: bolder;
     top: 5px;
-    right: -30px;
-    width: 35px;
+    right: -40px;
+    width: 40px;
     height: 35px;
     background-color: rgba(0,0,0,.3);
     cursor: pointer;
     visibility: hidden;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1020px) {
         visibility: visible;
     }
 }
