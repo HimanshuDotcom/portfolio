@@ -390,40 +390,37 @@ body {
 .project-card__text {
   font-size: 1.5rem; }
 
+.footer {
+  grid-column: center-start / center-end; }
+
 .contact {
-  grid-column: center-start / center-end;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto 1fr 1fr;
-  row-gap: 2rem;
-  justify-items: center;
-  align-items: center;
-  height: 90vh; }
-  .contact__heading {
-    grid-column: 1 / -1;
-    justify-self: start; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh; }
+  .contact > * {
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 800px) {
+      .contact > * {
+        margin-bottom: 2.5rem; } }
   .contact__box {
-    display: grid;
-    justify-items: center; }
-    .contact__box p {
-      font-size: 1.4rem;
-      color: rgba(0, 0, 0, 0.6); }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center; }
   .contact__icon {
-    width: 4rem;
-    height: 5rem;
-    fill: #FE2C54;
-    cursor: pointer; }
-  .contact__mail {
-    grid-column: 1 / 2; }
-  .contact__address {
-    grid-column: 2 / 3; }
+    height: 4rem;
+    fill: #e40017; }
+  .contact__id {
+    font-size: 1.5rem; }
   .contact__text {
-    font-size: 6rem;
-    color: #FE2C54;
-    font-weight: 100; }
-  .contact__text {
-    grid-column: 1 / -1; }
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2px; }
   .contact__btn {
-    grid-column: 1 / -1;
-    border: 1px solid #FE2C54;
-    justify-self: center; }
+    width: 17rem;
+    align-self: center;
+    font-size: 1.8rem; }
+    .contact__btn a {
+      text-decoration: none;
+      color: white; }

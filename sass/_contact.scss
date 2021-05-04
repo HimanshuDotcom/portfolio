@@ -1,59 +1,52 @@
-.contact {
-    // border: 2px solid green;
+.footer {
     grid-column: center-start / center-end;
-    // padding: 5rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto 1fr 1fr;
-    row-gap: 2rem;
-    justify-items: center;
-    align-items: center;
-    height: 90vh;
+}
 
-    &__heading {
-        grid-column: 1 / -1;
-        justify-self: start;
-    }
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    
+    & > * {
+        margin-bottom: 4rem;
 
-    &__box {
-        display: grid;
-        justify-items: center;
-
-        p {
-            font-size: 1.4rem;
-            color: rgba(0,0,0,.6)
+        @media only screen and (max-width: 800px) {
+            margin-bottom: 2.5rem;
         }
     }
 
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+
     &__icon {
-        width: 4rem;
-        height: 5rem;
-        fill: #FE2C54;
-        cursor: pointer;
+        height: 4rem;
+        fill: #e40017;
     }
 
-    &__mail {
-        grid-column: 1 / 2;
-    }
-
-    &__address {
-        grid-column: 2 / 3;
+    &__id {
+        // border: 1px solid red;
+        font-size: 1.5rem;
     }
 
     &__text {
-        font-size: 6rem;
-        color: #FE2C54;
-        font-weight: 100;
-    }
-
-    &__text {
-        grid-column: 1 / -1;
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 2px;
     }
 
     &__btn {
-        // justify-self: center;
-        grid-column: 1 / -1;
-        border: 1px solid #FE2C54;
-        justify-self: center;
+        width: 17rem;
+        align-self: center;
+        font-size: 1.8rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 }

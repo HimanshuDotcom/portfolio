@@ -100,12 +100,13 @@
                 <span class="skill__line"></span>
                 <p class="skill__name">Algorithms</p>
                 <span class="skill__line"></span>
+                
             </div>
             <div class="skill__box">
                 <h2 class="heading-secondary skill__title">Web Technologies</h2>
-                <p class="skill__name">HTML</p>
+                <p class="skill__name">HTML5</p>
                 <span class="skill__line skill__line-1"></span>
-                <p class="skill__name">CSS</p>
+                <p class="skill__name">CSS3</p>
                 <span class="skill__line skill__line-1"></span>
                 <p class="skill__name">Django</p>
                 <span class="skill__line skill__line--2"></span>
@@ -159,7 +160,7 @@
             <h1 class="heading-primary--design mb-lg">My Projects</h1>
             <div class="project-container">
                 <div class="project-card">
-                    <img src="img/himanshu.jpg" class="project-card__img">
+                    <img src="img/proj1.png" class="project-card__img" style="height: 300px;">
                     <div class="project-card__content">
                         <h3 class="heading-tertiary">Portfolio Website</h3>
                         <p class="project-card__text">Used HTML, CSS and JavaScript to build the project. It has different pages. The website is build
@@ -192,23 +193,27 @@
             </div>
         </section>
 
-        <section class="contact" id = "contact-section">
-            <h1 class="heading-primary--design contact__heading">Contact me</h1>
-            <div class="contact__box contact__mail">
-                <svg class="contact__icon">
-                    <use xlink:href="img/sprite.svg#icon-envelope"></use>
-                </svg>
-                <p>arorahimanshu472@gmail.com</p>
+        <footer class="footer" id = "contact-section">
+            <h1 class="heading-primary--design mb-lg">Contact Me</h1>
+            <div class="contact">
+                <div class="contact__box">
+                    <div class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href = "img/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        <p class="contact__id">arorahimanshu472@gmail.com</p>
+                    </div>
+                    <div class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href = "img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <p class="contact__id">Panipat, Haryana</p>
+                    </div>
+                </div>
+                <p class="contact__text">Let's get in touch</p>
+                <button class="contact__btn btn"><a href="mailto:arorahimanshu472@gmail.com">Mail me!!</a></button>
             </div>
-            <div class="contact__box contact__address">
-                <svg class="contact__icon">
-                    <use xlink:href="img/sprite.svg#icon-envelope"></use>
-                </svg>
-                <p>Panipat, Haryana</p>
-            </div>
-            <p class="contact__text">Let's get in touch</p>
-            <button class="btn contact__btn">Mail me !</button>
-        </section>
+        </footer>
     </div>
     <script src="./jquery-3.5.1.js"></script>
     <script src="script.js"></script>
