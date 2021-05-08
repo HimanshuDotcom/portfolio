@@ -251,12 +251,15 @@ body {
   grid-column: center-start / center-end;
   padding: 5rem 0;
   display: grid;
-  grid-template-rows: min-content auto minmax(min-content, 8rem) auto; }
+  grid-template-rows: min-content auto minmax(min-content, 9rem) auto; }
   .about__greeting {
     color: #FE2C54; }
   .about__info {
     font-size: 1.6rem;
     line-height: 22px; }
+  @media only screen and (max-width: 800px) {
+    .about {
+      grid-template-rows: min-content auto minmax(min-content, 11rem) auto; } }
 
 .personal-info {
   display: grid;

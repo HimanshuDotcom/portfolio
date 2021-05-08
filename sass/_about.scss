@@ -2,7 +2,7 @@
     grid-column: center-start / center-end;
     padding: 5rem 0;
     display: grid;
-    grid-template-rows: min-content auto minmax(min-content, 8rem) auto;
+    grid-template-rows: min-content auto minmax(min-content, 9rem) auto;
     &__greeting {
         color: #FE2C54;
     }
@@ -10,6 +10,10 @@
     &__info {
         font-size: 1.6rem;
         line-height: 22px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-template-rows: min-content auto minmax(min-content, 11rem) auto;
     }
 }
 
