@@ -7,8 +7,9 @@
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 30rem);
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    // justify-content: space-around;
+    gap: 7rem;
 }
 
 .project-card {

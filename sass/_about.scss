@@ -12,9 +12,9 @@
         line-height: 22px;
     }
 
-    @media only screen and (max-width: 800px) {
-        grid-template-rows: min-content auto minmax(min-content, 11rem) auto;
-    }
+    // @media only screen and (max-width: 800px) {
+    //     grid-template-rows: min-content auto minmax(min-content, 11rem) auto;
+    // }
 }
 
 .personal-info {

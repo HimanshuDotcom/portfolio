@@ -21,6 +21,11 @@
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
+    } 
+
+    &__item {
+        display: flex;
+        flex-direction: column;
     }
 
     &__icon {

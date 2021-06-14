@@ -257,9 +257,6 @@ body {
   .about__info {
     font-size: 1.6rem;
     line-height: 22px; }
-  @media only screen and (max-width: 800px) {
-    .about {
-      grid-template-rows: min-content auto minmax(min-content, 11rem) auto; } }
 
 .personal-info {
   display: grid;
@@ -280,11 +277,9 @@ body {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30rem);
-  justify-content: space-between;
   grid-column: center-start / center-end;
-  column-gap: 2rem;
-  row-gap: 4rem; }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 7rem; }
 
 .skill__box {
   display: grid;
@@ -376,8 +371,8 @@ body {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30rem);
-  gap: 5rem; }
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 7rem; }
 
 .project-card__content {
   padding: 2rem;
@@ -411,6 +406,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     text-align: center; }
+  .contact__item {
+    display: flex;
+    flex-direction: column; }
   .contact__icon {
     height: 4rem;
     fill: #e40017; }
