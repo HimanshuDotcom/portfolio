@@ -1,13 +1,13 @@
 .projects {
     // border: 2px solid brown;
-    padding: 10rem 0;
+    padding: 10rem 5rem;
     grid-column: center-start / center-end;
     // background-color: lightgray;
 }
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     // justify-content: space-around;
     gap: 7rem;
 }

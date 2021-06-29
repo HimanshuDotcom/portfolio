@@ -8,6 +8,11 @@
 ul {
   list-style: none; }
 
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -15,7 +20,7 @@ html {
   scroll-behavior: smooth; }
   @media only screen and (max-width: 800px) {
     html {
-      font-size: 8px; } }
+      font-size: 9px; } }
 
 body {
   background-color: #f2f2fc; }
@@ -278,7 +283,7 @@ body {
 .skills {
   display: grid;
   grid-column: center-start / center-end;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 7rem; }
 
 .skill__box {
@@ -366,12 +371,12 @@ body {
     grid-template-rows: auto; }
 
 .projects {
-  padding: 10rem 0;
+  padding: 10rem 5rem;
   grid-column: center-start / center-end; }
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 7rem; }
 
 .project-card__content {
